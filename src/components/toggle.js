@@ -1,7 +1,7 @@
 import { toggle } from '../actions';
 import { useSelector, useDispatch } from 'react-redux';
 
-function Counter() {
+function Toggle() {
   const dispatch = useDispatch();
   const toggleReducer = useSelector((state) => state.toggleReducer);
 
@@ -18,4 +18,4 @@ function Counter() {
   );
 }
 
-export default Counter;
+export default Toggle;
