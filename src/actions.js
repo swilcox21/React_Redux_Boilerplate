@@ -17,3 +17,5 @@ export const toggle = () => {
     type: 'TOGGLE',
   };
 };
+
+// CREATE NEW ACTIONS HERE
