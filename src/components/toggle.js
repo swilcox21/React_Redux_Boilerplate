@@ -1,5 +1,5 @@
-import { toggle } from '../actions';
-import { useSelector, useDispatch } from 'react-redux';
+import { toggle } from "../redux/toggle/toggleActions";
+import { useSelector, useDispatch } from "react-redux";
 
 function Toggle() {
   const dispatch = useDispatch();
@@ -13,7 +13,9 @@ function Toggle() {
       ) : (
         <button onClick={() => dispatch(toggle())}>false</button>
       )}
-      {toggleReducer === true && <h3>This message will only show if toggle is "true"</h3>}
+      {toggleReducer === true && (
+        <h3>This message will only show if toggle is "true"</h3>
+      )}
     </>
   );
 }
